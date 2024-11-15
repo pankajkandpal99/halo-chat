@@ -44,10 +44,10 @@ const Form = ({ type }) => {
       });
 
       if (res.ok) {
-        toast.success("Successfully created your account");
+        toast.success("Welcome back! You've successfully logged in.");
         router.push("/chats");
       } else {
-        toast.error("Invalid email or password");
+        toast.error("Invalid email or password. Please try again.");
       }
     }
   };
